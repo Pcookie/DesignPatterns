@@ -1,0 +1,20 @@
+//
+//  PrefixHeader.pch
+//  设计模式
+//
+//  Created by pro_cookie on 2017/10/16.
+//  Copyright © 2017年 pro_cookie. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#ifdef __OBJC__
+#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+#endif
+
+#define USE_ACME YES
+//#define USE_SIERRA YES
+
+#endif /* PrefixHeader_pch */

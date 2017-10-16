@@ -1,0 +1,562 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FD24B0291F945C3200D80480 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FD24B0281F945C3200D80480 /* main.m */; };
+		FD24B02C1F945C3200D80480 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FD24B02B1F945C3200D80480 /* AppDelegate.m */; };
+		FD24B02F1F945C3200D80480 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD24B02E1F945C3200D80480 /* ViewController.m */; };
+		FD24B0321F945C3200D80480 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD24B0301F945C3200D80480 /* Main.storyboard */; };
+		FD24B0341F945C3200D80480 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD24B0331F945C3200D80480 /* Assets.xcassets */; };
+		FD24B0371F945C3200D80480 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD24B0351F945C3200D80480 /* LaunchScreen.storyboard */; };
+		FD24B0471F945F3D00D80480 /* BrandingFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = FD24B0461F945F3D00D80480 /* BrandingFactory.m */; };
+		FD24B04A1F945F5B00D80480 /* AcmeBrandingFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = FD24B0491F945F5B00D80480 /* AcmeBrandingFactory.m */; };
+		FD24B04D1F945F6C00D80480 /* SierraBrandingFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = FD24B04C1F945F6C00D80480 /* SierraBrandingFactory.m */; };
+		FD24B0511F9461A000D80480 /* SierraView.m in Sources */ = {isa = PBXBuildFile; fileRef = FD24B0501F9461A000D80480 /* SierraView.m */; };
+		FD24B0541F9461BB00D80480 /* SierraMainButton.m in Sources */ = {isa = PBXBuildFile; fileRef = FD24B0531F9461BB00D80480 /* SierraMainButton.m */; };
+		FD24B0571F9461D100D80480 /* SierraToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = FD24B0561F9461D100D80480 /* SierraToolbar.m */; };
+		FD24B05A1F9461F300D80480 /* AcmeToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = FD24B0591F9461F300D80480 /* AcmeToolbar.m */; };
+		FD24B05D1F94620100D80480 /* AcmeMainButton.m in Sources */ = {isa = PBXBuildFile; fileRef = FD24B05C1F94620100D80480 /* AcmeMainButton.m */; };
+		FD24B0601F94621200D80480 /* AcmeView.m in Sources */ = {isa = PBXBuildFile; fileRef = FD24B05F1F94621200D80480 /* AcmeView.m */; };
+		FD24B0651F94642B00D80480 /* ChasingGame.m in Sources */ = {isa = PBXBuildFile; fileRef = FD24B0641F94642B00D80480 /* ChasingGame.m */; };
+		FD24B0681F94644600D80480 /* CharacterBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = FD24B0671F94644600D80480 /* CharacterBuilder.m */; };
+		FD24B06B1F94645000D80480 /* Character.m in Sources */ = {isa = PBXBuildFile; fileRef = FD24B06A1F94645000D80480 /* Character.m */; };
+		FD24B06E1F94645F00D80480 /* StandardCharacterBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = FD24B06D1F94645F00D80480 /* StandardCharacterBuilder.m */; };
+		FD24B0741F94878D00D80480 /* ConsoleEmulator.m in Sources */ = {isa = PBXBuildFile; fileRef = FD24B0731F94878D00D80480 /* ConsoleEmulator.m */; };
+		FD24B0771F94879700D80480 /* ConsoleController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD24B0761F94879700D80480 /* ConsoleController.m */; };
+		FD24B07A1F9487A500D80480 /* TouchConsoleController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD24B0791F9487A500D80480 /* TouchConsoleController.m */; };
+		FD24B07E1F9488E500D80480 /* GameBoyEmulator.m in Sources */ = {isa = PBXBuildFile; fileRef = FD24B07D1F9488E500D80480 /* GameBoyEmulator.m */; };
+		FD24B0811F9488FF00D80480 /* GameGearEmulator.m in Sources */ = {isa = PBXBuildFile; fileRef = FD24B0801F9488FF00D80480 /* GameGearEmulator.m */; };
+		FD24B0861F94A78000D80480 /* Taximeter.m in Sources */ = {isa = PBXBuildFile; fileRef = FD24B0851F94A78000D80480 /* Taximeter.m */; };
+		FD24B0891F94A79A00D80480 /* Car.m in Sources */ = {isa = PBXBuildFile; fileRef = FD24B0881F94A79A00D80480 /* Car.m */; };
+		FD24B08C1F94A7BE00D80480 /* CabDriver.m in Sources */ = {isa = PBXBuildFile; fileRef = FD24B08B1F94A7BE00D80480 /* CabDriver.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		FD24B0241F945C3200D80480 /* 设计模式.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "设计模式.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD24B0281F945C3200D80480 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FD24B02A1F945C3200D80480 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FD24B02B1F945C3200D80480 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FD24B02D1F945C3200D80480 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		FD24B02E1F945C3200D80480 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		FD24B0311F945C3200D80480 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FD24B0331F945C3200D80480 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FD24B0361F945C3200D80480 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FD24B0381F945C3200D80480 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD24B0451F945F3D00D80480 /* BrandingFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BrandingFactory.h; sourceTree = "<group>"; };
+		FD24B0461F945F3D00D80480 /* BrandingFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BrandingFactory.m; sourceTree = "<group>"; };
+		FD24B0481F945F5B00D80480 /* AcmeBrandingFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AcmeBrandingFactory.h; sourceTree = "<group>"; };
+		FD24B0491F945F5B00D80480 /* AcmeBrandingFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AcmeBrandingFactory.m; sourceTree = "<group>"; };
+		FD24B04B1F945F6C00D80480 /* SierraBrandingFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SierraBrandingFactory.h; sourceTree = "<group>"; };
+		FD24B04C1F945F6C00D80480 /* SierraBrandingFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SierraBrandingFactory.m; sourceTree = "<group>"; };
+		FD24B04E1F94602500D80480 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		FD24B04F1F9461A000D80480 /* SierraView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SierraView.h; sourceTree = "<group>"; };
+		FD24B0501F9461A000D80480 /* SierraView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SierraView.m; sourceTree = "<group>"; };
+		FD24B0521F9461BB00D80480 /* SierraMainButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SierraMainButton.h; sourceTree = "<group>"; };
+		FD24B0531F9461BB00D80480 /* SierraMainButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SierraMainButton.m; sourceTree = "<group>"; };
+		FD24B0551F9461D100D80480 /* SierraToolbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SierraToolbar.h; sourceTree = "<group>"; };
+		FD24B0561F9461D100D80480 /* SierraToolbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SierraToolbar.m; sourceTree = "<group>"; };
+		FD24B0581F9461F300D80480 /* AcmeToolbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AcmeToolbar.h; sourceTree = "<group>"; };
+		FD24B0591F9461F300D80480 /* AcmeToolbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AcmeToolbar.m; sourceTree = "<group>"; };
+		FD24B05B1F94620100D80480 /* AcmeMainButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AcmeMainButton.h; sourceTree = "<group>"; };
+		FD24B05C1F94620100D80480 /* AcmeMainButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AcmeMainButton.m; sourceTree = "<group>"; };
+		FD24B05E1F94621200D80480 /* AcmeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AcmeView.h; sourceTree = "<group>"; };
+		FD24B05F1F94621200D80480 /* AcmeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AcmeView.m; sourceTree = "<group>"; };
+		FD24B0631F94642B00D80480 /* ChasingGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChasingGame.h; sourceTree = "<group>"; };
+		FD24B0641F94642B00D80480 /* ChasingGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChasingGame.m; sourceTree = "<group>"; };
+		FD24B0661F94644600D80480 /* CharacterBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CharacterBuilder.h; sourceTree = "<group>"; };
+		FD24B0671F94644600D80480 /* CharacterBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CharacterBuilder.m; sourceTree = "<group>"; };
+		FD24B0691F94645000D80480 /* Character.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Character.h; sourceTree = "<group>"; };
+		FD24B06A1F94645000D80480 /* Character.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Character.m; sourceTree = "<group>"; };
+		FD24B06C1F94645F00D80480 /* StandardCharacterBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StandardCharacterBuilder.h; sourceTree = "<group>"; };
+		FD24B06D1F94645F00D80480 /* StandardCharacterBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StandardCharacterBuilder.m; sourceTree = "<group>"; };
+		FD24B0721F94878D00D80480 /* ConsoleEmulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConsoleEmulator.h; sourceTree = "<group>"; };
+		FD24B0731F94878D00D80480 /* ConsoleEmulator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConsoleEmulator.m; sourceTree = "<group>"; };
+		FD24B0751F94879700D80480 /* ConsoleController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConsoleController.h; sourceTree = "<group>"; };
+		FD24B0761F94879700D80480 /* ConsoleController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConsoleController.m; sourceTree = "<group>"; };
+		FD24B0781F9487A500D80480 /* TouchConsoleController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TouchConsoleController.h; sourceTree = "<group>"; };
+		FD24B0791F9487A500D80480 /* TouchConsoleController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TouchConsoleController.m; sourceTree = "<group>"; };
+		FD24B07B1F94889A00D80480 /* ConsoleCommands.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConsoleCommands.h; sourceTree = "<group>"; };
+		FD24B07C1F9488E500D80480 /* GameBoyEmulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameBoyEmulator.h; sourceTree = "<group>"; };
+		FD24B07D1F9488E500D80480 /* GameBoyEmulator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameBoyEmulator.m; sourceTree = "<group>"; };
+		FD24B07F1F9488FF00D80480 /* GameGearEmulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameGearEmulator.h; sourceTree = "<group>"; };
+		FD24B0801F9488FF00D80480 /* GameGearEmulator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameGearEmulator.m; sourceTree = "<group>"; };
+		FD24B0841F94A78000D80480 /* Taximeter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Taximeter.h; sourceTree = "<group>"; };
+		FD24B0851F94A78000D80480 /* Taximeter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Taximeter.m; sourceTree = "<group>"; };
+		FD24B0871F94A79A00D80480 /* Car.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Car.h; sourceTree = "<group>"; };
+		FD24B0881F94A79A00D80480 /* Car.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Car.m; sourceTree = "<group>"; };
+		FD24B08A1F94A7BE00D80480 /* CabDriver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CabDriver.h; sourceTree = "<group>"; };
+		FD24B08B1F94A7BE00D80480 /* CabDriver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CabDriver.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FD24B0211F945C3200D80480 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FD24B01B1F945C3200D80480 = {
+			isa = PBXGroup;
+			children = (
+				FD24B0261F945C3200D80480 /* 设计模式 */,
+				FD24B0251F945C3200D80480 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FD24B0251F945C3200D80480 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FD24B0241F945C3200D80480 /* 设计模式.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FD24B0261F945C3200D80480 /* 设计模式 */ = {
+			isa = PBXGroup;
+			children = (
+				FD24B0821F94A75F00D80480 /* Facade */,
+				FD24B06F1F94873800D80480 /* Bridge */,
+				FD24B0611F9463C900D80480 /* Builder */,
+				FD24B03E1F945C4900D80480 /* AbstractFactory */,
+				FD24B02A1F945C3200D80480 /* AppDelegate.h */,
+				FD24B02B1F945C3200D80480 /* AppDelegate.m */,
+				FD24B02D1F945C3200D80480 /* ViewController.h */,
+				FD24B02E1F945C3200D80480 /* ViewController.m */,
+				FD24B04E1F94602500D80480 /* PrefixHeader.pch */,
+				FD24B0301F945C3200D80480 /* Main.storyboard */,
+				FD24B0331F945C3200D80480 /* Assets.xcassets */,
+				FD24B0351F945C3200D80480 /* LaunchScreen.storyboard */,
+				FD24B0381F945C3200D80480 /* Info.plist */,
+				FD24B0271F945C3200D80480 /* Supporting Files */,
+			);
+			path = "设计模式";
+			sourceTree = "<group>";
+		};
+		FD24B0271F945C3200D80480 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FD24B0281F945C3200D80480 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FD24B03E1F945C4900D80480 /* AbstractFactory */ = {
+			isa = PBXGroup;
+			children = (
+				FD24B0421F945D9900D80480 /* Branding Factories */,
+				FD24B03F1F945D7000D80480 /* Branding Products */,
+				FD24B0451F945F3D00D80480 /* BrandingFactory.h */,
+				FD24B0461F945F3D00D80480 /* BrandingFactory.m */,
+			);
+			name = AbstractFactory;
+			sourceTree = "<group>";
+		};
+		FD24B03F1F945D7000D80480 /* Branding Products */ = {
+			isa = PBXGroup;
+			children = (
+				FD24B0411F945D8B00D80480 /* Sierra */,
+				FD24B0401F945D8400D80480 /* Acme */,
+			);
+			name = "Branding Products";
+			sourceTree = "<group>";
+		};
+		FD24B0401F945D8400D80480 /* Acme */ = {
+			isa = PBXGroup;
+			children = (
+				FD24B0581F9461F300D80480 /* AcmeToolbar.h */,
+				FD24B0591F9461F300D80480 /* AcmeToolbar.m */,
+				FD24B05B1F94620100D80480 /* AcmeMainButton.h */,
+				FD24B05C1F94620100D80480 /* AcmeMainButton.m */,
+				FD24B05E1F94621200D80480 /* AcmeView.h */,
+				FD24B05F1F94621200D80480 /* AcmeView.m */,
+			);
+			name = Acme;
+			sourceTree = "<group>";
+		};
+		FD24B0411F945D8B00D80480 /* Sierra */ = {
+			isa = PBXGroup;
+			children = (
+				FD24B04F1F9461A000D80480 /* SierraView.h */,
+				FD24B0501F9461A000D80480 /* SierraView.m */,
+				FD24B0521F9461BB00D80480 /* SierraMainButton.h */,
+				FD24B0531F9461BB00D80480 /* SierraMainButton.m */,
+				FD24B0551F9461D100D80480 /* SierraToolbar.h */,
+				FD24B0561F9461D100D80480 /* SierraToolbar.m */,
+			);
+			name = Sierra;
+			sourceTree = "<group>";
+		};
+		FD24B0421F945D9900D80480 /* Branding Factories */ = {
+			isa = PBXGroup;
+			children = (
+				FD24B0441F945DB000D80480 /* Acme */,
+				FD24B0431F945DAA00D80480 /* Sierra */,
+			);
+			name = "Branding Factories";
+			sourceTree = "<group>";
+		};
+		FD24B0431F945DAA00D80480 /* Sierra */ = {
+			isa = PBXGroup;
+			children = (
+				FD24B04B1F945F6C00D80480 /* SierraBrandingFactory.h */,
+				FD24B04C1F945F6C00D80480 /* SierraBrandingFactory.m */,
+			);
+			name = Sierra;
+			sourceTree = "<group>";
+		};
+		FD24B0441F945DB000D80480 /* Acme */ = {
+			isa = PBXGroup;
+			children = (
+				FD24B0481F945F5B00D80480 /* AcmeBrandingFactory.h */,
+				FD24B0491F945F5B00D80480 /* AcmeBrandingFactory.m */,
+			);
+			name = Acme;
+			sourceTree = "<group>";
+		};
+		FD24B0611F9463C900D80480 /* Builder */ = {
+			isa = PBXGroup;
+			children = (
+				FD24B0621F94640500D80480 /* Character Builders */,
+				FD24B0631F94642B00D80480 /* ChasingGame.h */,
+				FD24B0641F94642B00D80480 /* ChasingGame.m */,
+			);
+			name = Builder;
+			sourceTree = "<group>";
+		};
+		FD24B0621F94640500D80480 /* Character Builders */ = {
+			isa = PBXGroup;
+			children = (
+				FD24B0661F94644600D80480 /* CharacterBuilder.h */,
+				FD24B0671F94644600D80480 /* CharacterBuilder.m */,
+				FD24B0691F94645000D80480 /* Character.h */,
+				FD24B06A1F94645000D80480 /* Character.m */,
+				FD24B06C1F94645F00D80480 /* StandardCharacterBuilder.h */,
+				FD24B06D1F94645F00D80480 /* StandardCharacterBuilder.m */,
+			);
+			name = "Character Builders";
+			sourceTree = "<group>";
+		};
+		FD24B06F1F94873800D80480 /* Bridge */ = {
+			isa = PBXGroup;
+			children = (
+				FD24B0701F94874300D80480 /* Console */,
+			);
+			name = Bridge;
+			sourceTree = "<group>";
+		};
+		FD24B0701F94874300D80480 /* Console */ = {
+			isa = PBXGroup;
+			children = (
+				FD24B0711F94874E00D80480 /* Concrete Emulators */,
+				FD24B07B1F94889A00D80480 /* ConsoleCommands.h */,
+				FD24B0721F94878D00D80480 /* ConsoleEmulator.h */,
+				FD24B0731F94878D00D80480 /* ConsoleEmulator.m */,
+				FD24B0751F94879700D80480 /* ConsoleController.h */,
+				FD24B0761F94879700D80480 /* ConsoleController.m */,
+				FD24B0781F9487A500D80480 /* TouchConsoleController.h */,
+				FD24B0791F9487A500D80480 /* TouchConsoleController.m */,
+			);
+			name = Console;
+			sourceTree = "<group>";
+		};
+		FD24B0711F94874E00D80480 /* Concrete Emulators */ = {
+			isa = PBXGroup;
+			children = (
+				FD24B07C1F9488E500D80480 /* GameBoyEmulator.h */,
+				FD24B07D1F9488E500D80480 /* GameBoyEmulator.m */,
+				FD24B07F1F9488FF00D80480 /* GameGearEmulator.h */,
+				FD24B0801F9488FF00D80480 /* GameGearEmulator.m */,
+			);
+			name = "Concrete Emulators";
+			sourceTree = "<group>";
+		};
+		FD24B0821F94A75F00D80480 /* Facade */ = {
+			isa = PBXGroup;
+			children = (
+				FD24B0831F94A76B00D80480 /* Taxicab */,
+			);
+			name = Facade;
+			sourceTree = "<group>";
+		};
+		FD24B0831F94A76B00D80480 /* Taxicab */ = {
+			isa = PBXGroup;
+			children = (
+				FD24B0841F94A78000D80480 /* Taximeter.h */,
+				FD24B0851F94A78000D80480 /* Taximeter.m */,
+				FD24B0871F94A79A00D80480 /* Car.h */,
+				FD24B0881F94A79A00D80480 /* Car.m */,
+				FD24B08A1F94A7BE00D80480 /* CabDriver.h */,
+				FD24B08B1F94A7BE00D80480 /* CabDriver.m */,
+			);
+			name = Taxicab;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FD24B0231F945C3200D80480 /* 设计模式 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD24B03B1F945C3200D80480 /* Build configuration list for PBXNativeTarget "设计模式" */;
+			buildPhases = (
+				FD24B0201F945C3200D80480 /* Sources */,
+				FD24B0211F945C3200D80480 /* Frameworks */,
+				FD24B0221F945C3200D80480 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "设计模式";
+			productName = "设计模式";
+			productReference = FD24B0241F945C3200D80480 /* 设计模式.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FD24B01C1F945C3200D80480 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = pro_cookie;
+				TargetAttributes = {
+					FD24B0231F945C3200D80480 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = FD24B01F1F945C3200D80480 /* Build configuration list for PBXProject "设计模式" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FD24B01B1F945C3200D80480;
+			productRefGroup = FD24B0251F945C3200D80480 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FD24B0231F945C3200D80480 /* 设计模式 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FD24B0221F945C3200D80480 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD24B0371F945C3200D80480 /* LaunchScreen.storyboard in Resources */,
+				FD24B0341F945C3200D80480 /* Assets.xcassets in Resources */,
+				FD24B0321F945C3200D80480 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FD24B0201F945C3200D80480 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD24B0511F9461A000D80480 /* SierraView.m in Sources */,
+				FD24B07A1F9487A500D80480 /* TouchConsoleController.m in Sources */,
+				FD24B02F1F945C3200D80480 /* ViewController.m in Sources */,
+				FD24B0601F94621200D80480 /* AcmeView.m in Sources */,
+				FD24B04D1F945F6C00D80480 /* SierraBrandingFactory.m in Sources */,
+				FD24B05D1F94620100D80480 /* AcmeMainButton.m in Sources */,
+				FD24B04A1F945F5B00D80480 /* AcmeBrandingFactory.m in Sources */,
+				FD24B0861F94A78000D80480 /* Taximeter.m in Sources */,
+				FD24B08C1F94A7BE00D80480 /* CabDriver.m in Sources */,
+				FD24B0651F94642B00D80480 /* ChasingGame.m in Sources */,
+				FD24B0771F94879700D80480 /* ConsoleController.m in Sources */,
+				FD24B0571F9461D100D80480 /* SierraToolbar.m in Sources */,
+				FD24B0811F9488FF00D80480 /* GameGearEmulator.m in Sources */,
+				FD24B05A1F9461F300D80480 /* AcmeToolbar.m in Sources */,
+				FD24B0681F94644600D80480 /* CharacterBuilder.m in Sources */,
+				FD24B0741F94878D00D80480 /* ConsoleEmulator.m in Sources */,
+				FD24B07E1F9488E500D80480 /* GameBoyEmulator.m in Sources */,
+				FD24B0891F94A79A00D80480 /* Car.m in Sources */,
+				FD24B06E1F94645F00D80480 /* StandardCharacterBuilder.m in Sources */,
+				FD24B0541F9461BB00D80480 /* SierraMainButton.m in Sources */,
+				FD24B06B1F94645000D80480 /* Character.m in Sources */,
+				FD24B0471F945F3D00D80480 /* BrandingFactory.m in Sources */,
+				FD24B02C1F945C3200D80480 /* AppDelegate.m in Sources */,
+				FD24B0291F945C3200D80480 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FD24B0301F945C3200D80480 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FD24B0311F945C3200D80480 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FD24B0351F945C3200D80480 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FD24B0361F945C3200D80480 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FD24B0391F945C3200D80480 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FD24B03A1F945C3200D80480 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FD24B03C1F945C3200D80480 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "/Users/pro_cookie/Desktop/kdx/数据结构/设计模式/设计模式/PrefixHeader.pch";
+				INFOPLIST_FILE = "设计模式/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Company.----";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FD24B03D1F945C3200D80480 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "/Users/pro_cookie/Desktop/kdx/数据结构/设计模式/设计模式/PrefixHeader.pch";
+				INFOPLIST_FILE = "设计模式/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Company.----";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FD24B01F1F945C3200D80480 /* Build configuration list for PBXProject "设计模式" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD24B0391F945C3200D80480 /* Debug */,
+				FD24B03A1F945C3200D80480 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FD24B03B1F945C3200D80480 /* Build configuration list for PBXNativeTarget "设计模式" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD24B03C1F945C3200D80480 /* Debug */,
+				FD24B03D1F945C3200D80480 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FD24B01C1F945C3200D80480 /* Project object */;
+}

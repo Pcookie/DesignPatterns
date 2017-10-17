@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+
 #import "BrandingFactory.h"
 
 #import "ChasingGame.h"
@@ -18,12 +19,50 @@
 
 #import "CabDriver.h"
 
-@interface ViewController ()
+#import "UIImage+Transform.h"
+#import "UIImage+Shadow.h"
+#import "ImageTransformFilter.h"
+#import "ImageShadowFilter.h"
+#import "DecoratorView.h"
 
+#import "Avatar.h"
+#import "MetalArmor.h"
+#import "CrystalShield.h"
+#import "SwordAttack.h"
+#import "MagicFireAttack.h"
+#import "LightningAttack.h"
+
+#import "ReubenSandwich.h"
+
+#import "CustomTextField.h"
+#import "NumericInputValidator.h"
+#import "AlphaInputValidator.h"
+
+@interface ViewController ()<UITextFieldDelegate>
+@property (nonatomic, retain) CustomTextField *numericTextField;
+@property (nonatomic, retain) CustomTextField *alphaTextField;
 @end
 
 @implementation ViewController
 
+- (CustomTextField *)numericTextField {
+    if (!_numericTextField) {
+        _numericTextField = [[CustomTextField alloc] initWithFrame:CGRectMake(100, 100, 100, 30)];
+        _numericTextField.delegate = self;
+        _numericTextField.inputValidator = [[NumericInputValidator alloc] init];
+        _numericTextField.backgroundColor = [UIColor yellowColor];
+    }
+    return _numericTextField;
+}
+- (CustomTextField *)alphaTextField {
+    if (!_alphaTextField) {
+        _alphaTextField = [[CustomTextField alloc] initWithFrame:CGRectMake(100, 200, 100, 30)];
+        _alphaTextField.delegate = self;
+        _alphaTextField.inputValidator = [[AlphaInputValidator alloc] init];
+        _alphaTextField.backgroundColor = [UIColor yellowColor];
+    }
+    return _alphaTextField;
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
@@ -60,7 +99,7 @@
     
 #endif
 #pragma mark --- Bridge
-#if 1
+#if 0
     
     // 桥接模式  应用于 超过1维变化的时候  比如 手机品牌 和 手机软件  多对多的情况下 有点类似buildr模式
     TouchConsoleController *touchConsoleController = [TouchConsoleController new];
@@ -71,12 +110,107 @@
     
 #endif
 #pragma mark --- Facade
-#if 1
+#if 0
     CabDriver *cabDriver = [CabDriver new];
     [cabDriver driveToLocation:CGPointMake(1, 1)];
 #endif
+    
+#pragma mark --- Decorator
+#if 0
+    // load the original image
+    UIImage *image = [UIImage imageNamed:@"1.png"];
+    // create a transformation
+    CGAffineTransform rotateTransform = CGAffineTransformMakeRotation(0);
+    CGAffineTransform translateTransform = CGAffineTransformMakeTranslation(0 , 0);
+    CGAffineTransform finalTransform = CGAffineTransformConcat(rotateTransform, translateTransform);
+    // a true subclass approach
+    id <ImageComponent> transformedImage = [[ImageTransformFilter alloc] initWithImageComponent:image transform:finalTransform];
+    id <ImageComponent> finalImage = [[ImageShadowFilter alloc] initWithImageComponent:image];
+    /*
+     // a category approach
+     // add transformation
+     UIImage *transformedImage = [image imageWithTransform:finalTransform];
+     
+     // add shadow
+     id <ImageComponent> finalImage = [transformedImage imageWithDropShadow];
+     
+     // category approach in one line
+     //id <ImageComponent> finalImage = [[image imageWithTransform:finalTransform] imageWithDropShadow];
+     */
+    
+    // create a new image view
+    // with a filtered image
+    DecoratorView *decoratorView = [[DecoratorView alloc] initWithFrame:CGRectMake(100, 100, 100, 100)];
+//    decoratorView.backgroundColor = [UIColor yellowColor];
+    [decoratorView setImage:finalImage];
+    [self.view addSubview:decoratorView];
+#endif
+#pragma mark --- ChainOfResponsibility
+#if 0
+    // create a new avatar
+    AttackHandler *avatar = [[Avatar alloc] init];
+    
+    // put it in metal armor
+    AttackHandler *metalArmoredAvatar = [[MetalArmor alloc] init];
+    [metalArmoredAvatar setNextAttackHandler:avatar];
+    
+    // then add a crytal shield
+    // to the avatar who's in
+    // a metal armor
+    AttackHandler *superAvatar = [[CrystalShield alloc] init];
+    [superAvatar setNextAttackHandler:metalArmoredAvatar];
+    
+    // ... some other actions
+    
+    // attack the avatar with
+    // a sword
+    Attack *swordAttack = [[SwordAttack alloc] init];
+    [superAvatar handleAttack:swordAttack];
+    
+    // then attack the avatar with
+    // magic fire
+    Attack *magicFireAttack = [[MagicFireAttack alloc] init];
+    [superAvatar handleAttack:magicFireAttack];
+    
+    // now there is a new attack
+    // with lightning...
+    Attack *lightningAttack = [[LightningAttack alloc] init];
+    [superAvatar handleAttack:lightningAttack];
+    
+    // ... further actions
+#endif
+#pragma mark --- TemplateMethod
+#if 0
+    ReubenSandwich * sandwich = [[ReubenSandwich alloc] init];
+    [sandwich make];
+#endif
+#pragma mark --- Strategy
+#if 1
+    [self.view addSubview:self.numericTextField];
+    [self.view addSubview:self.alphaTextField];
+#endif
 }
 
+#pragma mark UITextFieldDelegate methods
+
+- (void)textFieldDidEndEditing:(UITextField *)textField
+{
+    //if (textField == numericTextField)
+    //{
+    // validate [textField text] and make sure
+    // the value is numeric
+    //}
+    //else if (textField == alphaTextField)
+    //{
+    // validate [textField text] and make sure
+    // the value contains only letters
+    //}
+    
+    if ([textField isKindOfClass:[CustomTextField class]])
+    {
+        [(CustomTextField*)textField validate];
+    }
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

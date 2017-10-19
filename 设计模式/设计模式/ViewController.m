@@ -38,6 +38,10 @@
 #import "NumericInputValidator.h"
 #import "AlphaInputValidator.h"
 
+#import "FlowerFactory.h"
+#import "ExtrinsicFlowerState.h"
+#import "FlyweightView.h"
+
 @interface ViewController ()<UITextFieldDelegate>
 @property (nonatomic, retain) CustomTextField *numericTextField;
 @property (nonatomic, retain) CustomTextField *alphaTextField;
@@ -185,9 +189,55 @@
     [sandwich make];
 #endif
 #pragma mark --- Strategy
-#if 1
+#if 0
     [self.view addSubview:self.numericTextField];
     [self.view addSubview:self.alphaTextField];
+#endif
+#pragma mark --- Flyweight //  测试这个的时候 需要加 -fno-objc-arc 因为使用了结构图
+#if 1
+    self.view.backgroundColor = [UIColor whiteColor];
+    // construct a flower list
+    FlowerFactory *factory = [[FlowerFactory alloc] init];
+    NSMutableArray *flowerList = [[NSMutableArray alloc]
+                                   initWithCapacity:500];
+    
+    for (int i = 0; i < 500; ++i)
+    {
+        // retrieve a shared instance
+        // of a flower flyweight object
+        // from a flower factory with a
+        // random flower type
+        FlowerType flowerType = arc4random() % kTotalNumberOfFlowerTypes;
+        UIView *flowerView = [factory flowerViewWithType:flowerType];
+        flowerView.backgroundColor = [UIColor colorWithRed:arc4random() % 256 / 255.0 green:arc4random() % 256 / 255.0 blue:arc4random() % 256 / 255.0 alpha:1];
+        // set up a location and an area for the flower
+        // to display onscreen
+        CGRect screenBounds = [[UIScreen mainScreen] bounds];
+        CGFloat x = (arc4random() % (NSInteger)screenBounds.size.width);
+        CGFloat y = (arc4random() % (NSInteger)screenBounds.size.height);
+        NSInteger minSize = 10;
+        NSInteger maxSize = 50;
+        CGFloat size = (arc4random() % (maxSize - minSize + 1)) + minSize;
+        
+        // assign attributes for a flower
+        // to an extrinsic state object
+        ExtrinsicFlowerState extrinsicState;
+        extrinsicState.flowerView = flowerView;
+        extrinsicState.area = CGRectMake(x, y, size, size);
+        
+        // add an extrinsic flower state
+        // to the flower list
+        [flowerList addObject:[NSValue value:&extrinsicState
+                                withObjCType:@encode(ExtrinsicFlowerState)]];
+    }
+    
+    // add the flower list to
+    // this FlyweightView instance
+    FlyweightView *view = [[FlyweightView alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    view.backgroundColor = [UIColor yellowColor];
+    [self.view addSubview:view];
+    [view setFlowerList:flowerList];
+
 #endif
 }
 

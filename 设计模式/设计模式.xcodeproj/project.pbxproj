@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		FD24B0291F945C3200D80480 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FD24B0281F945C3200D80480 /* main.m */; };
 		FD24B02C1F945C3200D80480 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FD24B02B1F945C3200D80480 /* AppDelegate.m */; };
-		FD24B02F1F945C3200D80480 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD24B02E1F945C3200D80480 /* ViewController.m */; };
+		FD24B02F1F945C3200D80480 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD24B02E1F945C3200D80480 /* ViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		FD24B0321F945C3200D80480 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD24B0301F945C3200D80480 /* Main.storyboard */; };
 		FD24B0341F945C3200D80480 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD24B0331F945C3200D80480 /* Assets.xcassets */; };
 		FD24B0371F945C3200D80480 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD24B0351F945C3200D80480 /* LaunchScreen.storyboard */; };
@@ -58,6 +58,9 @@
 		FD24B0DA1F95E3DB00D80480 /* NumericInputValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = FD24B0D91F95E3DB00D80480 /* NumericInputValidator.m */; };
 		FD24B0DD1F95E3E600D80480 /* AlphaInputValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = FD24B0DC1F95E3E600D80480 /* AlphaInputValidator.m */; };
 		FD24B0E01F95E3F400D80480 /* CustomTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = FD24B0DF1F95E3F400D80480 /* CustomTextField.m */; };
+		FD24B0E51F96FD2A00D80480 /* FlowerFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = FD24B0E41F96FD2A00D80480 /* FlowerFactory.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		FD24B0E81F96FD6400D80480 /* FlowerView.m in Sources */ = {isa = PBXBuildFile; fileRef = FD24B0E71F96FD6400D80480 /* FlowerView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		FD24B0EB1F96FD8C00D80480 /* FlyweightView.m in Sources */ = {isa = PBXBuildFile; fileRef = FD24B0EA1F96FD8C00D80480 /* FlyweightView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -164,6 +167,13 @@
 		FD24B0DC1F95E3E600D80480 /* AlphaInputValidator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlphaInputValidator.m; sourceTree = "<group>"; };
 		FD24B0DE1F95E3F400D80480 /* CustomTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTextField.h; sourceTree = "<group>"; };
 		FD24B0DF1F95E3F400D80480 /* CustomTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTextField.m; sourceTree = "<group>"; };
+		FD24B0E31F96FD2A00D80480 /* FlowerFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlowerFactory.h; sourceTree = "<group>"; };
+		FD24B0E41F96FD2A00D80480 /* FlowerFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlowerFactory.m; sourceTree = "<group>"; };
+		FD24B0E61F96FD6400D80480 /* FlowerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlowerView.h; sourceTree = "<group>"; };
+		FD24B0E71F96FD6400D80480 /* FlowerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlowerView.m; sourceTree = "<group>"; };
+		FD24B0E91F96FD8C00D80480 /* FlyweightView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlyweightView.h; sourceTree = "<group>"; };
+		FD24B0EA1F96FD8C00D80480 /* FlyweightView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlyweightView.m; sourceTree = "<group>"; };
+		FD24B0EC1F96FDC800D80480 /* ExtrinsicFlowerState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExtrinsicFlowerState.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -196,6 +206,7 @@
 		FD24B0261F945C3200D80480 /* 设计模式 */ = {
 			isa = PBXGroup;
 			children = (
+				FD24B0E11F96FCF900D80480 /* Flyweight */,
 				FD24B0D31F95E3A300D80480 /* Strategy */,
 				FD24B0C51F95E16A00D80480 /* TemplateMethod */,
 				FD24B0AA1F95B1BA00D80480 /* ChainOfResponsibility */,
@@ -510,6 +521,28 @@
 			name = InputValidation;
 			sourceTree = "<group>";
 		};
+		FD24B0E11F96FCF900D80480 /* Flyweight */ = {
+			isa = PBXGroup;
+			children = (
+				FD24B0E21F96FD0F00D80480 /* Flower Flyweights */,
+				FD24B0E91F96FD8C00D80480 /* FlyweightView.h */,
+				FD24B0EA1F96FD8C00D80480 /* FlyweightView.m */,
+				FD24B0EC1F96FDC800D80480 /* ExtrinsicFlowerState.h */,
+			);
+			name = Flyweight;
+			sourceTree = "<group>";
+		};
+		FD24B0E21F96FD0F00D80480 /* Flower Flyweights */ = {
+			isa = PBXGroup;
+			children = (
+				FD24B0E31F96FD2A00D80480 /* FlowerFactory.h */,
+				FD24B0E41F96FD2A00D80480 /* FlowerFactory.m */,
+				FD24B0E61F96FD6400D80480 /* FlowerView.h */,
+				FD24B0E71F96FD6400D80480 /* FlowerView.m */,
+			);
+			name = "Flower Flyweights";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -594,6 +627,7 @@
 				FD24B05D1F94620100D80480 /* AcmeMainButton.m in Sources */,
 				FD24B0C41F95B29200D80480 /* Avatar.m in Sources */,
 				FD24B0B81F95B20E00D80480 /* LightningAttack.m in Sources */,
+				FD24B0E81F96FD6400D80480 /* FlowerView.m in Sources */,
 				FD24B0A91F95A40B00D80480 /* DecoratorView.m in Sources */,
 				FD24B04A1F945F5B00D80480 /* AcmeBrandingFactory.m in Sources */,
 				FD24B0861F94A78000D80480 /* Taximeter.m in Sources */,
@@ -606,6 +640,7 @@
 				FD24B09D1F95A2ED00D80480 /* ImageShadowFilter.m in Sources */,
 				FD24B0811F9488FF00D80480 /* GameGearEmulator.m in Sources */,
 				FD24B0A01F95A31500D80480 /* UIImage+Transform.m in Sources */,
+				FD24B0E51F96FD2A00D80480 /* FlowerFactory.m in Sources */,
 				FD24B0941F95A1DC00D80480 /* UIImage+ImageComponent.m in Sources */,
 				FD24B05A1F9461F300D80480 /* AcmeToolbar.m in Sources */,
 				FD24B0681F94644600D80480 /* CharacterBuilder.m in Sources */,
@@ -622,6 +657,7 @@
 				FD24B0541F9461BB00D80480 /* SierraMainButton.m in Sources */,
 				FD24B0971F95A27600D80480 /* ImageFilter.m in Sources */,
 				FD24B06B1F94645000D80480 /* Character.m in Sources */,
+				FD24B0EB1F96FD8C00D80480 /* FlyweightView.m in Sources */,
 				FD24B0CC1F95E19E00D80480 /* ReubenSandwich.m in Sources */,
 				FD24B0471F945F3D00D80480 /* BrandingFactory.m in Sources */,
 				FD24B0DA1F95E3DB00D80480 /* NumericInputValidator.m in Sources */,
